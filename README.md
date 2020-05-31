@@ -9,3 +9,7 @@ NumPy
 Scikit-learn
 
 math
+
+soundfile
+
+tkinter
