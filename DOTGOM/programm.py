@@ -1,3 +1,7 @@
+#developers:
+#Salaurov Eugene
+#Ivashkin Valery
+
 import pandas as pd
 import numpy as np
 
@@ -21,12 +25,12 @@ import csv
 sc = StandardScaler()
 len_spectr = 250
 data = pd.read_csv('itog1.csv', sep = ';')
-X = data.iloc[:, 0:len_spectr].values
-y = data.iloc[:, 255].values
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=50)
-X_train = sc.fit_transform(X_train)
-X_test = sc.transform(X_test)
-regressor = RandomForestClassifier(n_estimators=200, random_state=50)
+X = data.iloc[:, 0:len_spectr].values #загружаем полученные данные 
+y = data.iloc[:, 255].values #загружаем метки для данных
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=50) #распеделем данные для обучения и тренировки алгоритма
+X_train = sc.fit_transform(X_train) #подготовка данных
+X_test = sc.transform(X_test) #подготовка данных
+regressor = RandomForestClassifier(n_estimators=200, random_state=50) #обучение алгоритма 
 regressor.fit(X_train, y_train)
 y_pred = regressor.predict(X_test)
 
@@ -35,11 +39,11 @@ def getText():
     s = s[0: len(s)-1]
     
     key = True
-    len_part = 390000
+    len_part = 390000 #длина входного сигнала 
 
-    music_sig, samplerate = sf.read(s)
+    music_sig, samplerate = sf.read(s) #получение сигнала из входного файла
 
-    for i_on_sig in range (0, int(len(music_sig)/len_part)):
+    for i_on_sig in range (0, int(len(music_sig)/len_part)): #обработка входного сигнала
         sig = music_sig[i_on_sig*len_part:(i_on_sig+1)*len_part]
 
         N = int(len(sig)/1024)*1024
@@ -49,39 +53,39 @@ def getText():
             time_array = [0]*1024
             for j in range(0, 1023):
                 time_array[j] = sig[j+i][0]
-            spectrum = rfft(time_array, 1024)
-            spectrum_abc = np_abs(spectrum)
+            spectrum = rfft(time_array, 1024) #ДПФ от части входного сигнала
+            spectrum_abc = np_abs(spectrum) #берем модуль так как итогом ДПФ является комплексный спектр 
             for j in range(0, 511):
                 spectrum_array[j] += spectrum_abc[j]
 
         for j in range(0, 511):
             spectrum_array[j] = spectrum_array[j]/int(len(sig)/1024)
 
-        y = np.array(spectrum_array)/N
+        y = np.array(spectrum_array)/N #преобразование типа для стабильной работы функций 
 
         if key == False:
-            a += [y[0:len_spectr]]
+            a += [y[0:len_spectr]] #формирование данных для прогонки через алгоритм 
 
         if key == True: 
             a = [y[0:len_spectr]]
             key = False
 
     
-    Test = a[0:len_spectr]
+    Test = a[0:len_spectr] #запись данных из полученного массива
     
     Test = sc.transform(Test)
 
     
-    y_pred_test = regressor.predict(Test)
+    y_pred_test = regressor.predict(Test) #прогонка входных данных через алгоритм 
 
-    print(y_pred_test)
+    #print(y_pred_test)
 
     arr = y_pred_test
     num = arr[0]
     N = len(arr)
     max_frq = 1
 
-    for i in range(N-1):
+    for i in range(N-1): #вывод окончательного результата 
         frq = 1
         for k in range(i+1,N):
             if arr[i] == arr[k]:
