@@ -8,13 +8,14 @@
 
 2. Open a command prompt and browse to the directory with the get-pip.py file.
 
-3. Run the following command: python get-pip.py
+3. Run the following command: 
+> python get-pip.py
 
 ### If Linux:
 
 > apt install python3-pip
 ***
-## To run the program, execute the following commands in the terminal:
+To run the program, execute the following commands in the terminal:
 
 > pip install pandas numpy scikit-learn math soundfile tkinter
 
