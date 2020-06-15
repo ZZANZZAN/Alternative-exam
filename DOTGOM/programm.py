@@ -1,22 +1,12 @@
 import pandas as pd
-import numpy as np
-
 from tkinter import Tk, END, LabelFrame, Text, Label, Frame, Button, LEFT
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
 from numpy import array, arange, abs as np_abs
-from numpy.fft import rfft, rfftfreq
-from numpy.random import uniform
-from math import sin, pi
-
-import joblib
-import pickle
-import matplotlib.pyplot as plt
+from numpy.fft import rfft, rfftfreq 
 import soundfile as sf
 import numpy as np
-import csv
 
 sc = StandardScaler()
 len_spectr = 250
