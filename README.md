@@ -1,15 +1,7 @@
 # Alternative-exam
 
-For the program to work, libraries such as:
+To run the program, execute the following commands in the terminal:
 
-pandas
+pip install pandas numpy scikit-learn math soundfile tkinter
 
-NumPy
-
-Scikit-learn
-
-math
-
-soundfile
-
-tkinter
+after installing the libraries, you can run the program
