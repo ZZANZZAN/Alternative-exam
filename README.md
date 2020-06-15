@@ -21,7 +21,7 @@ To run the program, execute the following commands in the terminal:
 
 after installing the libraries, you can run the program.
 *** 
-## If you have problems installing, please write to me in VK or by mail:
+### If you have problems installing, please write to me in VK or by mail:
 
 Mail: evgenii.salaurov@gmail.com
 
