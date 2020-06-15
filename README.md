@@ -1,6 +1,6 @@
 # Alternative-exam
 
-## You need a PIP program, if it is not, then do:
+### You need a PIP program, if it is not, then do:
 
 ### If Windows: 
 
