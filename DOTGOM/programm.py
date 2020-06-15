@@ -90,7 +90,7 @@ def deleteText():
     label['text'] = ''
  
 root = Tk()
-root.title("Распознаватель музона 1.2")
+root.title("Определитель жанра 1.3")
 f_top = LabelFrame (root)
 f_top = LabelFrame(text="Путь к файлу(Желательно использование форматов wav или flac):")
 f_top.pack(padx = 10, pady = 10)
