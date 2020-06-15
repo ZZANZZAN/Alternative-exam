@@ -3,8 +3,8 @@ from tkinter import Tk, END, LabelFrame, Text, Label, Frame, Button, LEFT
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
-from numpy import array, arange, abs as np_abs
-from numpy.fft import rfft, rfftfreq 
+from numpy import abs as np_abs
+from numpy.fft import rfft
 import soundfile as sf
 import numpy as np
 
@@ -79,11 +79,11 @@ def getText():
         if frq > max_frq:
             max_frq = frq
             num = arr[i]
-    if num == 0: label['text'] = 'хипхоп'
-    if num == 6: label['text'] = 'электроника'
-    if num == 2: label['text'] = 'джаз'
-    if num == 3: label['text'] = 'рок'
-    if num == 4: label['text'] = 'классика'
+    if num == 0: label['text'] = 'Хипхоп'
+    if num == 6: label['text'] = 'Электроника'
+    if num == 2: label['text'] = 'Джаз'
+    if num == 3: label['text'] = 'Рок'
+    if num == 4: label['text'] = 'Классика'
  
 def deleteText():
     text.delete(1.0, END)
@@ -92,7 +92,7 @@ def deleteText():
 root = Tk()
 root.title("Распознаватель музона 1.2")
 f_top = LabelFrame (root)
-f_top = LabelFrame(text="Путь к файлу(Используйте исключительно треки в формате wav):")
+f_top = LabelFrame(text="Путь к файлу(Желательно использование форматов wav или flac):")
 f_top.pack(padx = 10, pady = 10)
 text = Text(f_top, width=50, height=1)
 text.pack()
