@@ -8,6 +8,8 @@ The genres of music that the program can identify:
 - electronics
 
 The program has a fairly simple and intuitive interface. The full address for the .wav or .flac file is entered into the line and the "Define Genre" button is pressed. The program displays in the line under the input field what kind of music it is.
+
+The library is at the development stage, so in the future it is possible to increase the number of genres that the program can recognize. The quality of recognition will also increase.
 ***
 ### Installation:
 #### You need a PIP program, if it is not, then do.
