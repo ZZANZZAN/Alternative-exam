@@ -4,7 +4,7 @@
 
 ### If Windows: 
 
-1. Download the install script get-pip.py. If you have Python 3.2, the version of get-pip.py should be the same. In any case, right-click on the link and click “Save As ...” and save the script to any safe folder, for example, in “Downloads”.
+1. Download the install script get-pip.py (https://bootstrap.pypa.io/get-pip.py). If you have Python 3.2, the version of get-pip.py should be the same. In any case, right-click on the link and click “Save As ...” and save the script to any safe folder, for example, in “Downloads”.
 
 2. Open a command prompt and browse to the directory with the get-pip.py file.
 
@@ -17,7 +17,7 @@
 ***
 To run the program, execute the following commands in the terminal:
 
-> pip install pandas numpy scikit-learn math soundfile tkinter
+> pip install pandas numpy scikit-learn soundfile tkinter
 
 after installing the libraries, you can run the program.
 *** 
