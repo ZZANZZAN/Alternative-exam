@@ -10,7 +10,7 @@ import numpy as np
 
 sc = StandardScaler()
 len_spectr = 250
-data = pd.read_csv('itog1.csv', sep = ';')
+data = pd.read_csv('music_library.csv', sep = ';')
 X = data.iloc[:, 0:len_spectr].values
 y = data.iloc[:, 255].values
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=50)
