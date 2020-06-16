@@ -55,16 +55,12 @@ def getText():
         if key == True: 
             a = [y[0:len_spectr]]
             key = False
-
     
     Test = a[0:len_spectr]
     
     Test = sc.transform(Test)
 
-    
     y_pred_test = regressor.predict(Test)
-
-    print(y_pred_test)
 
     arr = y_pred_test
     num = arr[0]
