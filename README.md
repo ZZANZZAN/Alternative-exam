@@ -1,4 +1,4 @@
-# Alternative-exam
+# DOTGOM
 
 ### You need a PIP program, if it is not, then do:
 
