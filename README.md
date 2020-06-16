@@ -34,6 +34,8 @@ And install version 1.0.1 (If you did not have this library installed, then run 
 > pip install pandas==1.0.1
 
 after installing the libraries, you can run the program.
+
+#### Attention!!! Please prepare files in the format .wav or .flac before using the program. To format a file in these formats, you can use the Audacity program or any other program that can format files in these formats.
 *** 
 ### If you have problems installing, please write to me in VK or by mail:
 
