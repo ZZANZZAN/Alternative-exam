@@ -1,6 +1,17 @@
 # DOTGOM
-### You need a PIP program, if it is not, then do:
-### If Windows: 
+***
+### About the program:
+The genres of music that the program can identify:
+- rock 
+- hip-hop 
+- jazz 
+- electronics
+
+The program has a fairly simple and intuitive interface. The full address for the .wav or .flac file is entered into the line and the "Define Genre" button is pressed. The program displays in the line under the input field what kind of music it is.
+***
+### Installation:
+#### You need a PIP program, if it is not, then do.
+- #### If Windows: 
 
 1. Download the install script get-pip.py (https://bootstrap.pypa.io/get-pip.py). If you have Python 3.2, the version of get-pip.py should be the same. In any case, right-click on the link and click “Save As ...” and save the script to any safe folder, for example, in “Downloads”.
 
@@ -8,7 +19,7 @@
 
 3. Run the following command: 
 > python get-pip.py
-### If Linux:
+- #### If Linux:
 > apt install python3-pip
 ***
 To run the program, execute the following commands in the terminal:
