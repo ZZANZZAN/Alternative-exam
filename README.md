@@ -1,7 +1,5 @@
 # DOTGOM
-
 ### You need a PIP program, if it is not, then do:
-
 ### If Windows: 
 
 1. Download the install script get-pip.py (https://bootstrap.pypa.io/get-pip.py). If you have Python 3.2, the version of get-pip.py should be the same. In any case, right-click on the link and click “Save As ...” and save the script to any safe folder, for example, in “Downloads”.
@@ -10,14 +8,17 @@
 
 3. Run the following command: 
 > python get-pip.py
-
 ### If Linux:
-
 > apt install python3-pip
 ***
 To run the program, execute the following commands in the terminal:
+> pip install numpy scikit-learn soundfile tkinter
 
-> pip install pandas numpy scikit-learn soundfile tkinter
+If the Pandas library you have has a version greater than 1.0.1, then delete it:
+> pip uninstall pandas
+
+And install version 1.0.1 (If you did not have this library installed, then run only this command):
+> pip install pandas==1.0.1
 
 after installing the libraries, you can run the program.
 *** 
