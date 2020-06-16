@@ -21,7 +21,7 @@ The program has a fairly simple and intuitive interface. The full address for th
 > python get-pip.py
 - #### If Linux:
 > apt install python3-pip
-
+#### Installing the necessary libraries:
 To run the program, execute the following commands in the terminal:
 > pip install numpy scikit-learn soundfile tkinter
 
