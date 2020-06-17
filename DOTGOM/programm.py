@@ -7,10 +7,11 @@ from numpy import abs as np_abs
 from numpy.fft import rfft
 import soundfile as sf
 import numpy as np
+import os
 
 sc = StandardScaler()
 len_spectr = 250
-data = pd.read_csv('music_library.csv', sep = ';')
+data = pd.read_csv(os.getcwd() + "\music_library.csv", sep = ';')
 X = data.iloc[:, 0:len_spectr].values
 y = data.iloc[:, 255].values
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=50)
@@ -26,8 +27,7 @@ def getText():
     
     key = True
     len_part = 390000
-
-    music_sig, samplerate = sf.read(s)
+    music_sig, samplerate = sf.read(os.getcwd() + "\\" + s)
 
     for i_on_sig in range (0, int(len(music_sig)/len_part)):
         sig = music_sig[i_on_sig*len_part:(i_on_sig+1)*len_part]
@@ -55,12 +55,16 @@ def getText():
         if key == True: 
             a = [y[0:len_spectr]]
             key = False
+
     
     Test = a[0:len_spectr]
     
     Test = sc.transform(Test)
 
+    
     y_pred_test = regressor.predict(Test)
+
+    print(y_pred_test)
 
     arr = y_pred_test
     num = arr[0]
