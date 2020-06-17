@@ -36,6 +36,9 @@ And install version 1.0.1 (If you did not have this library installed, then run 
 after installing the libraries, you can run the program.
 
 #### Attention!!! Please prepare files in the format .wav or .flac before using the program. To format a file in these formats, you can use the Audacity (You can download it here: https://audacity-free.ru/) program or any other program that can format files in these formats.
+
+It is enough for the program to submit only the name of the file that you want to use. (Input example: "Grand Massive - Recurrence.wav")
+#### Attention!!! Be sure to place the file in the directory with the program.
 *** 
 ### If you have problems installing, please write to me in VK or by mail:
 
