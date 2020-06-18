@@ -13,7 +13,7 @@ The library is at the development stage, so in the future it is possible to incr
 ***
 ### Use exe:
 1. Download the repository and unzip it in any directory convenient for you. The exe file is in the "/ DOTGOM-exe" folder.
-2. Next to the program there is a folder "/ music", it is necessary to copy tracks to it, the genre of which you want to know.
+2. Tracks whose genre you want to determine, put in the folder "/ DOTGOM-exe", next to the program "DOTGOM.exe"
 3. Try the program;)
 ***
 ### Development:
