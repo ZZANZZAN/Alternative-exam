@@ -11,7 +11,12 @@ The program has a fairly simple and intuitive interface. The full address for th
 
 The library is at the development stage, so in the future it is possible to increase the number of genres that the program can recognize. The quality of recognition will also increase.
 ***
-### Installation:
+### Use exe:
+1. Download the repository and unzip it in any directory convenient for you. The exe file is in the "/ DOTGOM-exe" folder.
+2. Next to the program there is a folder "/ music", it is necessary to copy tracks to it, the genre of which you want to know.
+3. Try the program;)
+***
+### Development:
 #### You need a PIP program, if it is not, then do.
 - #### If Windows: 
 
