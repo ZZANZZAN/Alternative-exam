@@ -12,7 +12,7 @@ The program has a fairly simple and intuitive interface. The full address for th
 The library is at the development stage, so in the future it is possible to increase the number of genres that the program can recognize. The quality of recognition will also increase.
 ***
 ### Use exe:
-1. Download the repository and unzip it in any directory convenient for you. The exe file is in the "/ DOTGOM-exe" folder.
+1. Download the zip-file (https://drive.google.com/file/d/1IUcf3vpRUSU1znotYzryv-HRP5VLjzG1/view?usp=sharing) and unzip it in any directory convenient for you. The exe file is in the "/ DOTGOM-exe" folder.
 2. Tracks whose genre you want to determine, put in the folder "/ DOTGOM-exe", next to the program "DOTGOM.exe"
 3. Try the program;)
 ***
